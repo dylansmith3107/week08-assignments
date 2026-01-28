@@ -72,10 +72,11 @@ export default async function RecipeId({ params }) {
           <h3>Comments</h3>
           {rows.map((row) => {
             return (
-              <div key={row.id}>
+              <div className={recipeIdStyles.comment} key={row.id}>
                 <p>{row.name} says...</p>
                 <p>{row.comment}</p>
                 <button
+                  className={recipeIdStyles.deleteButton}
                   onClick={async () => {
                     "use server";
 
