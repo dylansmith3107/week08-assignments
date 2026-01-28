@@ -1,0 +1,52 @@
+.welcome {
+  padding: 2rem;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.welcome h2 {
+  padding-bottom: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.foodTypeSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.foodType {
+  width: 25%;
+  height: 12vh;
+  background-color: darkorange;
+  text-align: center;
+  align-content: center;
+  border-radius: 16px;
+  font-size: x-large;
+}
+
+.foodTypeLinks {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+.foodTypeLinks:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .foodType {
+    width: 15%;
+    height: 18vh;
+    background-color: darkorange;
+    text-align: center;
+    align-content: center;
+    border-radius: 16px;
+    font-size: x-large;
+  }
+}

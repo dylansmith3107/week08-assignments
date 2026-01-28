@@ -1,0 +1,46 @@
+.recipeList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.sortLinks {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sortLinks:hover {
+  text-decoration: underline;
+}
+
+.recipeDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.recipeLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recipeLink:hover {
+  text-decoration: underline;
+}
+
+.recipeDiv h3 {
+  font-size: large;
+}

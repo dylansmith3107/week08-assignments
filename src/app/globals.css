@@ -5,22 +5,59 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 11vh;
+  position: sticky;
+  top: 0;
+  background-color: saddlebrown;
+  color: darkorange;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  font-size: large;
+}
+
+.header-links {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-links:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 78vh;
+  background-color: papayawhip;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  width: 100%;
+  background-color: saddlebrown;
+  color: darkorange;
+  margin: auto;
 }
